@@ -4,3 +4,249 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('/fonts/Dosis-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('/fonts/Dosis-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('/fonts/Dosis-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('/fonts/Dosis-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('/fonts/Dosis-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('/fonts/Dosis-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('/fonts/Dosis-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Alegreya serif */
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/Alegreya/Alegreya-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/Alegreya/Alegreya-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/Alegreya/Alegreya-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/Alegreya/Alegreya-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/Alegreya/Alegreya-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/Alegreya/Alegreya-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/Alegreya/Alegreya-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/Alegreya/Alegreya-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/Alegreya/Alegreya-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('fonts/Alegreya/Alegreya-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/Alegreya/Alegreya-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/Alegreya/Alegreya-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Tisa Black Italic */
+@font-face {
+    font-family: 'Tisa';
+    src: url('fonts/tisa-sans-pro/Tisa Sans Pro Black Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Tisa Black */
+@font-face {
+    font-family: 'Tisa';
+    src: url('fonts/tisa-sans-pro/Tisa Sans Pro Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Tisa Bold Italic */
+@font-face {
+    font-family: 'Tisa';
+    src: url('fonts/tisa-sans-pro/Tisa Sans Pro Bold Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Tisa Bold */
+@font-face {
+    font-family: 'Tisa';
+    src: url('fonts/tisa-sans-pro/Tisa Sans Pro Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Tisa ExtraBold Italic */
+@font-face {
+    font-family: 'Tisa';
+    src: url('fonts/tisa-sans-pro/Tisa Sans Pro ExtraBold Italic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Tisa ExtraBold */
+@font-face {
+    font-family: 'Tisa';
+    src: url('fonts/tisa-sans-pro/Tisa Sans Pro ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Tisa ExtraLight Italic */
+@font-face {
+    font-family: 'Tisa';
+    src: url('fonts/tisa-sans-pro/Tisa Sans Pro ExtraLight Italic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* Tisa ExtraLight */
+@font-face {
+    font-family: 'Tisa';
+    src: url('fonts/tisa-sans-pro/Tisa Sans Pro ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Tisa Italic */
+@font-face {
+    font-family: 'Tisa';
+    src: url('fonts/tisa-sans-pro/Tisa Sans Pro Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Tisa Light Italic */
+@font-face {
+    font-family: 'Tisa';
+    src: url('fonts/tisa-sans-pro/Tisa Sans Pro Light Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Tisa Light */
+@font-face {
+    font-family: 'Tisa';
+    src: url('fonts/tisa-sans-pro/Tisa Sans Pro Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Tisa Medium Italic */
+@font-face {
+    font-family: 'Tisa';
+    src: url('fonts/tisa-sans-pro/Tisa Sans Pro Medium Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Tisa Medium */
+@font-face {
+    font-family: 'Tisa';
+    src: url('fonts/tisa-sans-pro/Tisa Sans Pro Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Tisa Regular */
+@font-face {
+    font-family: 'Tisa';
+    src: url('fonts/tisa-sans-pro/Tisa Sans Pro Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,26 +1,16 @@
 <script>
-	import Logo from '$lib/icons/logo.svelte';
 	import Navbar from '$lib/components/navbar.svelte';
-	import Separater from '../../lib/icons/separater.svelte';
+	import Logo from '$lib/icons/logo.svelte';
 </script>
 
 <div class="app">
 	<div class="topbar">
-		<div class="logo">
-			<Logo iconColor="#000" />
-		</div>
+		<div class="logo"><Logo iconColor="#000" /></div>
 		<div class="title">TENSOR SCROLLS</div>
-		<div class="separator">
-			<Separater />
-		</div>
-		<div class="subtitle">PAPERZZ</div>
 		<Navbar />
 	</div>
-	<div class="content">
-		<div class="left"></div>
-		<div class="right">
-			<slot />
-		</div>
+	<div class="pane">
+		<slot />
 	</div>
 </div>
 
@@ -28,12 +18,18 @@
 	.app {
 		display: grid;
 		grid-template-columns: 1fr;
-		position: relative;
+		grid-template-areas:
+			'topbar .'
+			'pane pane';
+		/*max-width: 1200px;*/
+		height: 98svh;
+		overflow: scroll;
+		align-items: center;
+		justify-content: center;
 	}
-	.content {
-		display: grid;
-		grid-template-columns: 1fr 3fr;
-		gap: 1rem;
+	.pane {
+		grid-area: pane;
+		margin: 0 auto;
 	}
 	.logo {
 		background-color: #ffd000;
@@ -46,9 +42,6 @@
 		width: 28px;
 		height: 28px;
 	}
-	.separator {
-		height: 120px;
-	}
 	.topbar {
 		font-family: 'Lombok', sans-serif;
 		display: flex;
@@ -59,9 +52,7 @@
 		margin-top: 4px;
 		font-size: 34px;
 	}
-	.subtitle {
-		font-size: 32px;
-	}
+
 	@media (min-width: 710px) {
 		.logo {
 			width: 38px;

@@ -2,9 +2,6 @@
 	<div class="item">
 		<a href="/">HOME</a>
 	</div>
-	<div class="item">
-		<a href="/paperzz">PAPERZZ</a>
-	</div>
 </div>
 
 <style>

@@ -1,51 +1,55 @@
 <script>
-	import Logo from '$lib/icons/logo.svelte';
-	import Navbar from '../lib/components/navbar.svelte';
+	export let data;
 </script>
 
-<div class="app">
-	<div class="topbar">
-		<div class="logo">
-			<Logo iconColor="#000" />
-		</div>
-		<div class="title">TENSOR SCROLLS</div>
-		<Navbar />
+<div class="pane">
+	<div class="left">
+		<p>
+			TensorScrolls is a repository of concise explanations of research articles I read. I write
+			these to understand the papers better and to share my understanding with others. I mostly read
+			papers on Deep Learning, Vector Symbolic Architectures and Internet of Things.
+		</p>
+	</div>
+	<div class="right">
+		{#each data.posts as post}
+			<div class="post">
+				<h2>
+					<a href={post.path}>
+						{post.meta.title}
+					</a>
+				</h2>
+			</div>
+		{/each}
 	</div>
 </div>
 
 <style>
-	.logo {
-		background-color: #ffd000;
-		padding: 8px;
-		display: grid;
-		margin-bottom: 4px;
-		align-items: center;
-		justify-content: center;
-		border-radius: 6px;
-		width: 28px;
-		height: 28px;
-	}
-	.topbar {
-		font-family: 'Lombok', sans-serif;
+	@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+	.pane {
 		display: flex;
-		align-items: center;
-		gap: 0.5rem;
+		justify-content: space-evenly;
+		align-items: start;
+		margin-top: 8em;
 	}
-	.title {
-		margin-top: 4px;
-		font-size: 34px;
+	.left {
+		width: max(25%, 384px);
+		/*font-family: 'Inter', sans-serif;*/
 	}
-
-	@media (min-width: 710px) {
-		.logo {
-			width: 38px;
-			height: 38px;
-		}
-		.title {
-			font-size: 48px;
-		}
-		.topbar {
-			gap: 1rem;
-		}
+	.left p {
+		font-weight: 300;
+		font-family: 'Tisa', sans-serif;
+		line-height: 1.6;
+		font-size: 18px;
+	}
+	.post h2 {
+		font-family: 'Quicksand', sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+	}
+	a {
+		text-decoration: none;
+	}
+	.right {
+		width: max(55%, 768px);
 	}
 </style>
