@@ -44,6 +44,7 @@
 		font-size: 1em;
 		text-align: center;
 		width: 75%;
+		color: #205ea6;
 	}
 	.banner {
 		height: 100px;
@@ -82,6 +83,7 @@
 		display: none;
 		font-weight: 400;
 		font-family: 'Tisa', sans-serif;
+		color: #100f0f;
 		line-height: 1.6;
 		font-size: 16px;
 	}
@@ -105,7 +107,9 @@
 	}
 	.post h2 a {
 		text-decoration: none;
-		color: black;
+		/*color: black;*/
+		color: #5e409d;
+		color: #a02f6f;
 	}
 	.right {
 		display: flex;
@@ -113,6 +117,9 @@
 		gap: 2em;
 		max-width: max(50%, 784px);
 		/*margin-top: 40%;*/
+	}
+	.sub {
+		/*color: #24837b;*/
 	}
 	@media (min-width: 1124px) {
 		.pane {
