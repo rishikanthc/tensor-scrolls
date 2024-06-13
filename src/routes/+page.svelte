@@ -4,11 +4,21 @@
 
 <div class="pane">
 	<div class="left">
-		<p>
+		<div class="inner">
+			<div class="banner">
+				<img
+					style="width: 100%; height: 100%;"
+					src="tensor_sketch_cropped.png"
+					alt="Tensor Scrolls"
+				/>
+			</div>
+			<div class="catch">Machine Learning One Paper at a Time</div>
+		</div>
+		<div class="desc">
 			TensorScrolls is a repository of concise explanations of research articles I read. I write
 			these to understand the papers better and to share my understanding with others. I mostly read
 			papers on Deep Learning, Vector Symbolic Architectures and Internet of Things.
-		</p>
+		</div>
 	</div>
 	<div class="right">
 		{#each data.posts as post}
@@ -18,6 +28,9 @@
 						{post.meta.title}
 					</a>
 				</h2>
+				{#if post.meta.sub}
+					<h4 class="sub">{post.meta.sub}</h4>
+				{/if}
 			</div>
 		{/each}
 	</div>
@@ -25,31 +38,118 @@
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+	.catch {
+		font-family: 'HomemadeApple', cursive;
+		font-size: 1em;
+		text-align: center;
+		width: 75%;
+	}
+	.banner {
+		height: 100px;
+		width: 100px;
+	}
+	.sub {
+		font-family: 'Tisa', sans-serif;
+		font-size: 16px;
+		font-style: italic;
+		font-weight: 400;
+	}
 	.pane {
 		display: flex;
-		justify-content: space-evenly;
-		align-items: start;
-		margin-top: 8em;
+		position: relative;
+		justify-content: left;
+		/*width: max(100%, 984px);*/
+		/*margin: 8em auto 0 auto;*/
+		gap: 4rem;
+		flex-direction: column;
 	}
 	.left {
-		width: max(25%, 384px);
-		/*font-family: 'Inter', sans-serif;*/
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		/*gap: 2em;*/
+		margin-top: 4em;
 	}
-	.left p {
-		font-weight: 300;
+	.inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.desc {
+		display: none;
+		font-weight: 400;
 		font-family: 'Tisa', sans-serif;
 		line-height: 1.6;
-		font-size: 18px;
+		font-size: 16px;
+	}
+	.post {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+	}
+	.post h2,
+	h4 {
+		margin: 0;
+		padding: 0;
 	}
 	.post h2 {
 		font-family: 'Quicksand', sans-serif;
-		font-weight: 500;
+		font-family: 'InterDisplay', sans-serif;
+		font-family: 'Alegreya', serif;
+		line-height: 1.6;
+		font-weight: 400;
 		font-size: 20px;
 	}
-	a {
+	.post h2 a {
 		text-decoration: none;
+		color: black;
 	}
 	.right {
-		width: max(55%, 768px);
+		display: flex;
+		flex-direction: column;
+		gap: 2em;
+		max-width: max(50%, 784px);
+		/*margin-top: 40%;*/
+	}
+	@media (min-width: 1124px) {
+		.pane {
+			width: max(100%, 984px);
+			margin: 8em auto 0 auto;
+			gap: 4rem;
+		}
+		.left {
+			width: max(30%, 384px);
+			flex-direction: column;
+			align-items: center;
+			justify-content: start;
+			position: fixed;
+			z-index: 100;
+			top: 8em;
+			left: 1.5em;
+			height: 80svh;
+			transform-origin: top left;
+			margin-top: 0;
+			/*gap: 2em;*/
+		}
+		.right {
+			margin-left: 40%;
+			margin-top: 0;
+		}
+		.desc {
+			display: block;
+		}
+	}
+	@media (min-width: 710px) {
+		.banner {
+			height: 200px;
+			width: 200px;
+		}
+		.catch {
+			font-size: 1.5em;
+			width: 300px;
+		}
 	}
 </style>
