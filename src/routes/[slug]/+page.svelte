@@ -8,7 +8,7 @@
 			<div class="banner">
 				<img
 					style="width: 100%; height: 100%;"
-					src="tensor_sketch_cropped.png"
+					src="tensor_sketch_cropped_colored.png"
 					alt="Tensor Scrolls"
 				/>
 			</div>
@@ -53,6 +53,14 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		gap: 2em;
+		/*border: 1px solid black;*/
+		padding: 2em;
+		background-color: #161616;
+		border-radius: 10px;
+		box-shadow:
+			inset 0 2px 2px #000,
+			0 2px 0 hsla(30, 0%, 32%, 0.3);
 	}
 	.catch {
 		font-family: 'HomemadeApple', cursive;
@@ -60,6 +68,7 @@
 		text-align: center;
 		width: 250px;
 		color: #205ea6;
+		color: #0e61fe;
 	}
 	.abstract {
 		display: flex;
@@ -69,11 +78,14 @@
 		font-family: 'Tisa', sans-serif;
 		font-size: 17px;
 		line-height: 1.75;
+		color: #c6c6c6;
 	}
 	.tags {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
+		color: #b47cff;
+		font-family: 'Tisa', sans-serif;
 	}
 	.items {
 		display: flex;
@@ -110,10 +122,12 @@
 		padding: 0;
 		margin: 0;
 		color: #af3029;
+		color: #d62c6f;
 	}
 	.authors {
 		margin-top: 2em;
 		font-family: 'Tisa', sans-serif;
+		color: #00c2bf;
 		font-size: 1rem;
 		display: flex;
 		flex-wrap: wrap;
@@ -124,6 +138,7 @@
 		font-family: 'Quicksand', sans-serif;
 		font-weight: 520;
 		color: #100f0f;
+		color: #f4f4f4;
 	}
 	:global(h3, h4, h5) {
 		font-weight: 700;
@@ -135,12 +150,14 @@
 		font-size: 16px;
 		line-height: 1.6;
 		color: #343331;
+		color: #c6c6c6;
 	}
 	:global(li) {
 		font-family: 'Noto Serif', serif;
 		font-size: 18px;
 		line-height: 1.6;
 		color: #343331;
+		color: #c6c6c6;
 		margin: 0.5em 0;
 		font-weight: 380;
 	}

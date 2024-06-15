@@ -13,10 +13,11 @@
 	}
 	.item {
 		padding: 0.5em 1em;
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 	}
 	a {
 		text-decoration: none;
 		color: #000;
+		color: #78a9ff;
 	}
 </style>

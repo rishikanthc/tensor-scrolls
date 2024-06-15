@@ -40,6 +40,8 @@
 	.title {
 		margin-top: 4px;
 		font-size: 34px;
+		color: #0043ce;
+		color: #0e61fe;
 	}
 
 	@media (min-width: 710px) {

@@ -8,7 +8,7 @@
 			<div class="banner">
 				<img
 					style="width: 100%; height: 100%;"
-					src="tensor_sketch_cropped.png"
+					src="tensor_sketch_cropped_colored.png"
 					alt="Tensor Scrolls"
 				/>
 			</div>
@@ -45,6 +45,7 @@
 		text-align: center;
 		width: 75%;
 		color: #205ea6;
+		color: #0e61fe;
 	}
 	.banner {
 		height: 100px;
@@ -72,18 +73,27 @@
 		justify-content: center;
 		/*gap: 2em;*/
 		margin-top: 4em;
+		gap: 4em;
 	}
 	.inner {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		gap: 2em;
+		/*border: 1px solid black;*/
+		padding: 2em;
+		background-color: #161616;
+		box-shadow:
+			inset 0 2px 2px #000,
+			0 2px 0 hsla(30, 0%, 32%, 0.3);
 	}
 	.desc {
 		display: none;
 		font-weight: 400;
 		font-family: 'Tisa', sans-serif;
 		color: #100f0f;
+		color: #c6c6c6;
 		line-height: 1.6;
 		font-size: 16px;
 	}
@@ -110,6 +120,7 @@
 		/*color: black;*/
 		color: #5e409d;
 		color: #a02f6f;
+		color: #78a9ff;
 	}
 	.right {
 		display: flex;
@@ -120,6 +131,7 @@
 	}
 	.sub {
 		/*color: #24837b;*/
+		color: #c6c6c6;
 	}
 	@media (min-width: 1124px) {
 		.pane {
