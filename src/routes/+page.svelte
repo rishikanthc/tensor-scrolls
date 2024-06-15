@@ -1,4 +1,5 @@
 <script>
+	import Info from '../lib/icons/info.svelte';
 	export let data;
 </script>
 
@@ -23,11 +24,13 @@
 	<div class="right">
 		{#each data.posts as post}
 			<div class="post">
-				<h2>
-					<a href={post.path}>
-						{post.meta.title}
-					</a>
-				</h2>
+				<div class="row">
+					<h2>
+						<a href={post.path}>
+							{post.meta.title}
+						</a>
+					</h2>
+				</div>
 				{#if post.meta.sub}
 					<h4 class="sub">{post.meta.sub}</h4>
 				{/if}
@@ -50,6 +53,24 @@
 	.banner {
 		height: 100px;
 		width: 100px;
+	}
+	.row {
+		display: flex;
+		align-items: center;
+		gap: 1em;
+	}
+	.info {
+		width: 15px;
+		height: 15px;
+		padding: 4px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 2px;
+		background-color: #262626;
+		box-shadow:
+			inset 0 2px 2px #000,
+			0 2px 0 hsla(30, 0%, 32%, 0.3);
 	}
 	.sub {
 		font-family: 'Tisa', sans-serif;
@@ -80,12 +101,13 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		gap: 2em;
+		gap: 1em;
 		/*border: 1px solid black;*/
-		padding: 2em;
+		padding: 1em;
+		border-radius: 10px;
 		background-color: #161616;
 		box-shadow:
-			inset 0 2px 2px #000,
+			inset 0 2px 3px #000,
 			0 2px 0 hsla(30, 0%, 32%, 0.3);
 	}
 	.desc {
@@ -111,6 +133,7 @@
 		font-family: 'Quicksand', sans-serif;
 		font-family: 'InterDisplay', sans-serif;
 		font-family: 'Alegreya', serif;
+		font-family: 'IBM Plex Sans', sans-serif;
 		line-height: 1.6;
 		font-weight: 400;
 		font-size: 20px;

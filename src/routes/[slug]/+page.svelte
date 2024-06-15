@@ -53,14 +53,16 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		gap: 2em;
+		gap: 1em;
 		/*border: 1px solid black;*/
-		padding: 2em;
+		padding: 1em;
 		background-color: #161616;
 		border-radius: 10px;
 		box-shadow:
-			inset 0 2px 2px #000,
+			inset 0 2px 3px #000,
 			0 2px 0 hsla(30, 0%, 32%, 0.3);
+		/*inset 0 2px 2px #000,*/
+		/*0 2px 0 hsla(30, 0%, 32%, 0.3);*/
 	}
 	.catch {
 		font-family: 'HomemadeApple', cursive;
