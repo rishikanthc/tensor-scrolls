@@ -68,7 +68,7 @@
 		font-family: 'HomemadeApple', cursive;
 		font-size: 1.2em;
 		text-align: center;
-		width: 250px;
+		width: 150px;
 		color: #205ea6;
 		color: #0e61fe;
 	}
@@ -182,6 +182,9 @@
 		.title {
 			font-size: 2rem;
 		}
+		.catch {
+			width: 300px;
+		}
 	}
 	@media (min-width: 1194px) {
 		.sidebar {
@@ -190,6 +193,13 @@
 		.banner {
 			height: 200px;
 			width: 200px;
+		}
+
+		.catch {
+			width: 250px;
+		}
+		.panel {
+			width: 70%;
 		}
 		.frame {
 			justify-content: left;
